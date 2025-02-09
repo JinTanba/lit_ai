@@ -17,6 +17,9 @@ app.get('/health', (req: Request, res: Response) => {
   res.status(200).json({ status: 'ok' });
 });
 
+app.post("/chat", () => {
+})
+
 // エラーハンドリングミドルウェア
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   console.error(err.stack);
